@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --font-size-header: 2rem;
+    --accent-color:#FC9803;
+    --primary-color: #F2F2F2;
+    --secondary-color: #0f0f0f;
+    --paragraph-color: #787878;
+    --font-size-paragraph: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    max-width: auto;
+    background-color: var(--primary-color);
+}
+
+
+h3{
+    color: var(--secondary-color);
+}
+
+h4{
+    font-size: 1.6rem;
+}
+
+h5{
+    font-size: 1.1rem;
+}
+/* nav bar styling */
+
+.header{
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px .9px  rgba(0,0,0,0.3);
+    z-index: 111;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: conter;
+    cursor: pointer;
+}
+
+.header .logo{
+ 
+   margin-left: 80px;
+   font-size: var(--font-size-header);
+   font-weight: 700;
+}
+
+#dot{
+    color: var(--accent-color);
+}
+
+.nav-bar{
+    font-size: 1.1rem;
+
+}
+
+.nav-bar ul li{
+    margin-left: 20px;
+}
+
+.nav-bar ul li a{
+    padding: 10px;
+    color: #787878;
+}
+
+.nav-bar li {
+    
+    display: inline-flex;
+    margin-right: 20px; 
+}
+
+.about{
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.border-line{
+   border-top: 0px ;
+    border-width: 3px;
+    height: 2px;
+    
+    border-bottom: 2px solid var(--accent-color);
+    width:9%;
+}
+
+.skills{
+    width: 4%;
+}
+.project-style{
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 510px;
+    width: 15%;
+}
+
+
+/* main section */
+
+main{
+    margin-top: 200px;
+    display: flex;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+main  .header-intro{
+    margin-left: 80px;
+   
+}
+
+.header-intro h2{
+    font-size: 3rem;
+    padding-bottom: 40px;
+}
+
+.header-intro p{
+    font-size: 1.3rem;
+    width: 600px;
+    padding-bottom: 90px;
+    color: var(--paragraph-color)
+}
+main  .hero-image{
+    position: absolute;
+    top: -20px;
+    margin-top: -120px;
+    left: 700px;
+    
+}
+
+main  .hero-image #my-dp{
+    position: relative;
+    top: -500px;
+    left: 150px;
+  
+}
+
+.btn-contact-me{
+    padding: 18px 40px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #FC9803;;
+    background-color: var(--secondary-color);
+    border-color: #FC9803;
+    cursor: pointer;
+}
+
+
+/* About me */
+
+.about-me-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px
+}
+
+
+.about-me-content img{
+   
+    padding: 20px;
+    background-color: #FC9803;
+    box-shadow: 0px 0px 1px  rgba(0,0,0,0.3);
+    z-index: 1;
+    margin-left: 80px;
+}
+
+.about-section{
+    margin-right: 70px;
+    margin-left: 0px;
+    padding: 20px;
+    text-align: left;
+    width: 650px;
+}
+
+.about-me-content h3{
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.about-me-content p{
+  margin-top: 0px;
+  line-height: 2;
+  font-size: 1.3rem;
+  color: var(--paragraph-color);
+ 
+}
+
+.style-list{
+    list-style: disc;
+    color: var(--paragraph-color);
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-left: 20px;
+}
+
+.style-h4{
+    margin: 20px 0;
+}
+
+.qualification{
+    margin-top: 80px;
+    align-items: center;
+    color: var(--paragraph-color);
+    
+}
+
+/* Qualification section */
+
+.qualification-intro{
+   
+    text-align: left;
+    margin-left: 60px;
+    letter-spacing: .08rem;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.qualification-intro p{
+    font-size: .8rem;
+}
+
+.education{
+ 
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.institution, .work-experience{
+   
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 2rem;
+}
+
+.institution h4{
+    color: var(--secondary-color);
+}
+
+.one{
+     padding-bottom: 20px;
+}
+
+
+/* project section */
+
+.project{
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.project-two{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    flex: 1 50%;
+    gap: .9rem;
+    margin-top: -100px;
+    width: 50%;
+    margin-right: 230px;
+    padding-left: 40px;
+}
+
+.project-box{
+    
+    margin-left: 20px;
+}
+
+.calc-button{
+    margin-top: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #FC9803;
+    padding: 12px 28px;
+    border-color: #FC9803;
+    background-color: black;
+}
+
+.calc-img{
+    width: 80%;
+}

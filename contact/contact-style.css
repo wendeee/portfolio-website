@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --font-size-header: 2rem;
+    --accent-color:#FC9803;
+    --primary-color: #F2F2F2;
+    --secondary-color: #0f0f0f;
+    --font-size-paragraph: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+li{
+    list-style: none;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color:#F2F2F2;;
+}
+
+.header{
+    width: 100%;
+    padding: 0px 10px;
+    box-shadow: 0px 0px .9px  rgba(0,0,0,0.3);
+    z-index: 111;
+    background-color: var(--primary-color);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: conter;
+    cursor: pointer;
+}
+
+.header .logo{
+    top: 0;
+    margin-left: 80px;
+    font-size: 2rem;
+    font-weight: 700; 
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    
+  
+ }
+
+ #dot{
+     color: #FC9803;
+ }
+
+ .nav-bar{
+    font-size: 1.1rem;
+
+}
+
+.nav-bar ul li{
+    margin-left: 20px;
+}
+
+.nav-bar ul li a{
+    padding: 10px;
+}
+
+.nav-bar li {
+    display: inline-flex;
+    margin-right: 20px;  
+}
+
+
+.container{
+
+    background: #fff;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-height: 800px;
+    padding: 20px;
+}
+
+.container  h2{
+ 
+  font-size: 2rem;
+  padding-bottom: 10px;
+  color: #FC9803;
+}
+
+.container p{
+    padding-bottom: 30px;
+}
+
+.container  .name-email{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.container .name, .container .email{
+  padding: 10px;
+  
+  width: 50%;
+ 
+}
+
+.container .name {
+    margin-right: 10px;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+#subject{
+    width: 100%;
+    padding: 10px;
+}
+
+#message-area{
+    width: 100%;
+}
+
+select{
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+button{
+    margin-left: 400px;
+    color: #FC9803;
+    margin-top: 8px;
+    padding: 12px 28px;
+    border-color: #FC9803;
+    background-color: black;
+}
